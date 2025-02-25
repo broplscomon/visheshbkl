@@ -12,6 +12,31 @@
       max-width: 90%;
       word-wrap: break-word;
     }
+    @media (max-width: 600px) {
+      .carousel-box .title {
+        font-size: 1.2rem;
+      }
+    }
+    /* Added styles for Telegram icon and text */
+    .footer-credit {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+    .footer-credit img {
+      width: 24px;
+      height: 24px;
+    }
   </style>
 </head>
 <body>
@@ -96,6 +121,11 @@
       </div>
     </div>
   </div>
+
+<!-- Telegram Credit Link -->
+<a href="https://t.me/nightr0gen" class="footer-credit" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"> By nightr0gen
+</a>
 
   <!-- ✅ Corrected JavaScript File Link -->
   <script src="script.js" defer></script>
