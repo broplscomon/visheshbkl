@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector(".carousel");
-    const firstItem = document.querySelector(".carousel-item");
 
-    if (carousel && firstItem) {
-        // Wait for a short time to ensure content is loaded
+    if (carousel) {
+        // Use requestAnimationFrame to ensure it's set AFTER rendering
+        requestAnimationFrame(() => {
+            carousel.scrollLeft = 0;
+        });
+
+        // Ensure it resets even if auto-scroll runs
         setTimeout(() => {
-            carousel.scrollTo({ left: 0, behavior: "instant" }); // Instantly move to the first item
-        }, 100); // Short delay to prevent auto-scrolling interference
+            carousel.scrollLeft = 0;
+        }, 500);
     }
 });
 
