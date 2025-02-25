@@ -195,3 +195,25 @@ body {
   font-weight: inherit;
   font-style: inherit;
 }
+
+/* Styles for Telegram credit */
+.footer-credit {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.footer-credit img {
+    width: 24px;
+    height: 24px;
+}
