@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstItem = document.querySelector(".carousel-item");
 
     if (carousel && firstItem) {
-        // Ensure carousel starts at the first item
-        carousel.scrollLeft = 0;
+        // Wait for a short time to ensure content is loaded
+        setTimeout(() => {
+            carousel.scrollTo({ left: 0, behavior: "instant" }); // Instantly move to the first item
+        }, 100); // Short delay to prevent auto-scrolling interference
     }
 });
+
 
 /*--------------------
 Vars
